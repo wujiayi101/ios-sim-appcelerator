@@ -1,6 +1,9 @@
-Script to run a patch to speed up ios testing on simulator 
+# iOS Simulator Accelerate Script
+Apple's Instruments / UIAutomation tool have an built in delay issue, so the simulator runs very slow.  There is a [third party patch](https://discuss.appium.io/t/xcode-6-ios-7-1-sim-slowness/1242/9) that can fix this issue. 
 
-https://discuss.appium.io/t/xcode-6-ios-7-1-sim-slowness/1242/9
-
-Simply run ./accelerate_ios_sim.sh, then you are good to go
-
+And here is script to apply the patch without any pains.
+```bash
+    git clone {your git url}
+    cd ios-sim-appcelerator
+    ./accelerate_ios_sim.sh
+```
